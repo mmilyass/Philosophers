@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 10:20:52 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/05/30 14:56:19 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/05/30 18:29:01 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,13 +50,13 @@ void	*routine(void *data)
 	}
 	while (1)
 	{
-		is_thinking(philo);
 		if (death_checker(philo) == -1)
 			break ;
 		is_eating(philo);
 		if (death_checker(philo) == -1)
 			break ;
 		is_sleeping(philo);
+		is_thinking(philo);
 	}
 	return (NULL);
 }

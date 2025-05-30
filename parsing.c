@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 10:26:41 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/05/30 10:26:42 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/05/30 19:11:13 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	init_args(t_init *data, int ac, char **args)
 
 	i = 0;
 	if (ac != 5 && ac != 6)
-		return (free(data), write(2, "error\n", 17), -1);
+		return (free(data), write(2, "error\n", 7), -1);
 	else
 	{
 		data->start_time = get_time_in_ms();

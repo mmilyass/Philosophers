@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 10:20:39 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/05/30 10:23:11 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/05/30 19:25:24 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,9 +60,6 @@ void	save_printf(t_phls *philo, char *msg)
 
 int	ft_usleep(t_phls *data, long time)
 {
-	int	num_sleep;
-
-	num_sleep = time / 50;
 	while (time >= 50)
 	{
 		if (death_checker(data) == -1)
